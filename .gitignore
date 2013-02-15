@@ -8,5 +8,5 @@ metadata.json
 
 # ignore Vagrant's .vagrant directory
 /.vagrant
-cookbooks
+cookbooks/*
 tmp
