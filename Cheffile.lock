@@ -1,0 +1,173 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.1.8)
+    apt (1.4.2)
+    bluepill (1.0.4)
+    build-essential (1.0.0)
+    chef-client (1.1.2)
+    chef-server (0.99.12)
+      apache2 (>= 0.0.0)
+      bluepill (>= 0.0.0)
+      couchdb (>= 0.0.0)
+      daemontools (>= 0.0.0)
+      gecode (>= 0.0.0)
+      java (>= 0.0.0)
+      nginx (>= 0.0.0)
+      openssl (>= 0.0.0)
+      runit (>= 0.0.0)
+      xml (>= 0.0.0)
+      zlib (>= 0.0.0)
+    couchdb (1.0.0)
+      erlang (>= 0.0.0)
+    daemontools (0.9.0)
+      build-essential (>= 0)
+      ucspi-tcp (>= 0)
+    erlang (1.0.0)
+      yum (>= 0.5.0)
+    gecode (1.2.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+    git (0.10.0)
+      runit (>= 0.0.0)
+      yum (>= 0.0.0)
+    iptables (0.10.0)
+    java (1.5.0)
+    mysql (1.2.4)
+      openssl (>= 0.0.0)
+    nginx (0.101.2)
+      bluepill (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (~> 1.0.2)
+      runit (>= 0.0.0)
+    ntp (1.1.8)
+    ohai (1.0.2)
+    openssh (0.8.0)
+    openssl (1.0.0)
+    perl (1.1.0)
+    php (1.0.2)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
+    runit (0.15.0)
+    sudo (1.1.0)
+    timezone (0.0.1)
+    tmux (1.0.0)
+    ucspi-tcp (1.0.0)
+      build-essential (>= 0)
+    vim (1.0.2)
+    xml (1.0.2)
+    yum (0.5.2)
+    zlib (1.0.0)
+
+GIT
+  remote: https://github.com/edelight/chef-solo-search
+  ref: master
+  sha: 743a0d2c6bbfd6d595b8088457b6a7fecb3a6729
+  specs:
+    chef-solo-search (0.4.0)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: v0.8.6
+  sha: f5b89cb4dafa261afb5b18c4d0936aaf302e2a15
+  specs:
+    rvm (0.8.6)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/chef-byobu
+  ref: master
+  sha: 3fc1c38a6e33951fa5bf3e7f58d4d2f1ce9b6948
+  specs:
+    byobu (0.0.1)
+      tmux (>= 0.0.0)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/chef-etckeeper
+  ref: master
+  sha: 5150ec1fa0ca2d421ff37740c3a7933829ddc49a
+  specs:
+    etckeeper (0.0.1)
+      git (>= 0.0.0)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/chef-unattended_upgrades
+  ref: master
+  sha: 473d80030a436e2fc537aace50136da91f58f690
+  specs:
+    unattended_upgrades (0.0.1)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/chef-vagrant_extras
+  ref: master
+  sha: b511293c9185dcec438454ee164a75ce67f0425a
+  specs:
+    vagrant_extras (0.0.1)
+      sudo (>= 0.0.0)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/logwatch
+  ref: master
+  sha: df45cc5a31965a37407466b028561f576d996828
+  specs:
+    logwatch (0.1.1)
+      perl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/postfix
+  ref: master
+  sha: a6bce51f1aa5665be19b000640a4cda59dfc8702
+  specs:
+    postfix (1.0.1)
+
+GIT
+  remote: https://github.com/jeremiahsnapp/users
+  ref: master
+  sha: fc4e040b4115a3a755ab98cf1193abc71759e1b9
+  specs:
+    users (1.1.2)
+
+PATH
+  remote: site-cookbooks/base
+  specs:
+    base (0.0.1)
+      iptables (>= 0.0.0)
+
+PATH
+  remote: site-cookbooks/example_users
+  specs:
+    example_users (0.0.1)
+      users (>= 0.0.0)
+
+PATH
+  remote: site-cookbooks/web
+  specs:
+    web (0.0.1)
+      apache2 (>= 0.0.0)
+      iptables (>= 0.0.0)
+      mysql (>= 0.0.0)
+      php (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  base (>= 0)
+  byobu (>= 0)
+  chef-client (>= 0)
+  chef-server (>= 0)
+  chef-solo-search (>= 0)
+  etckeeper (>= 0)
+  example_users (>= 0)
+  git (>= 0)
+  logwatch (>= 0)
+  ntp (>= 0)
+  openssh (>= 0)
+  postfix (>= 0)
+  rvm (>= 0)
+  sudo (>= 0)
+  timezone (>= 0)
+  unattended_upgrades (>= 0)
+  users (>= 0)
+  vagrant_extras (>= 0)
+  vim (>= 0)
+  web (>= 0)
+

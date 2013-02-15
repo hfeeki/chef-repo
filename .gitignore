@@ -1,0 +1,12 @@
+.rake_test_cache
+
+# ignore metadata.json files created when uploading cookbooks to chef-server
+metadata.json
+
+# ignore Librarian's /tmp directory
+/tmp
+
+# ignore Vagrant's .vagrant directory
+/.vagrant
+cookbooks
+tmp
