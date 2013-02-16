@@ -1,7 +1,7 @@
 name "web"
 description "Web Role"
 run_list(
-  "role[base]",
+  "role[base2]",
   "recipe[web]",
   "recipe[web::php]",
   "recipe[web::iptables]"

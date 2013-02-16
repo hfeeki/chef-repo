@@ -2,11 +2,12 @@
 
 # ignore metadata.json files created when uploading cookbooks to chef-server
 metadata.json
-
+.chef
 # ignore Librarian's /tmp directory
 /tmp
-
+.swp
 # ignore Vagrant's .vagrant directory
 /.vagrant
 cookbooks/*
 tmp
+cookbooks.tgz

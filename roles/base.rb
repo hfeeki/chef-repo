@@ -1,11 +1,16 @@
 name "base"
-description "Base Role"
+description "Base role for a server"
 run_list(
-  "recipe[chef-client::delete_validation]",  # COOK-986 - normally this should not be run on a chef server
-  "recipe[chef-client::config]",             # this will fail if /etc/chef directory doesn't exist
-  "recipe[chef-client::service]",
-  "role[common_base]"
+  "recipe[osops-utils::packages]",
+  "recipe[openssh]",
+  "recipe[ntp]",
+  "recipe[sosreport]",
+  "recipe[rsyslog::default]",
+  "recipe[hardware]",
+  "recipe[osops-utils::default]"
 )
-override_attributes(
-  :chef_client => { :server_url => "https://chef.example.edu" } 
-) 
+default_attributes(
+  "ntp" => {
+    "servers" => ["0.pool.ntp.org", "1.pool.ntp.org", "2.pool.ntp.org"]
+  }
+)
