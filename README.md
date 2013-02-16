@@ -2,7 +2,8 @@
 
 See the [wiki](https://github.com/jeremiahsnapp/chef-repo/wiki) to read about how this [Chef](http://wiki.opscode.com/display/chef/Home) repository uses [Librarian](https://github.com/applicationsonline/librarian) to manage cookbooks and [Vagrant](http://vagrantup.com/) for easy iterative testing.
 
-based on https://github.com/millisami/chef-repo.git
+based on https://github.com/millisami/chef-repo.git  
+https://github.com/rcbops/chef-cookbooks.git
 
 ## Description ##
 
