@@ -75,6 +75,12 @@ cookbook 'rvm',
 #   :git => 'https://github.com/findsyou/cookbooks',
 #   :ref => 'postgresql-improvements'
 
+cookbook 'nodejs',
+  :git => 'https://github.com/mdxp/nodejs-cookbook'
+
+cookbook 'npm',
+  :git => 'http://github.com/balbeko/chef-npm'
+
 #[submodule "cookbooks/apache2"]
 #	path = cookbooks/apache2
 #	url = https://github.com/opscode-cookbooks/apache2.git
