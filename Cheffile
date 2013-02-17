@@ -30,9 +30,6 @@ cookbook 'unattended_upgrades',
 #  :path => '../cookbooks/unattended_upgrades'
 
 # Modified Opscode Maintained Cookbooks
-cookbook 'postfix',
-  :git => 'https://github.com/jeremiahsnapp/postfix'
-#  :path => '../cookbooks/postfix'
 
 #cookbook 'perl',
 #  :git => 'https://github.com/jeremiahsnapp/perl'
