@@ -35,8 +35,8 @@ cookbook 'unattended_upgrades',
 #  :git => 'https://github.com/jeremiahsnapp/perl'
 #  :path => '../cookbooks/perl'
 
-cookbook 'logwatch',
-  :git => 'https://github.com/jeremiahsnapp/logwatch'
+#cookbook 'logwatch',
+#  :git => 'https://github.com/jeremiahsnapp/logwatch'
 #  :path => '../cookbooks/logwatch'
 
 # Community Cookbooks
