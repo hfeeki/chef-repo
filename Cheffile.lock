@@ -55,6 +55,7 @@ SITE
     tmux (1.0.0)
     ucspi-tcp (1.0.0)
       build-essential (>= 0)
+    users (1.3.0)
     vim (1.0.2)
     xml (1.0.2)
     yum (0.5.2)
@@ -120,13 +121,6 @@ GIT
   specs:
     postfix (1.0.1)
 
-GIT
-  remote: https://github.com/jeremiahsnapp/users
-  ref: master
-  sha: fc4e040b4115a3a755ab98cf1193abc71759e1b9
-  specs:
-    users (1.1.2)
-
 PATH
   remote: site-cookbooks/base
   specs:
@@ -166,7 +160,6 @@ DEPENDENCIES
   sudo (>= 0)
   timezone (>= 0)
   unattended_upgrades (>= 0)
-  users (>= 0)
   vagrant_extras (>= 0)
   vim (>= 0)
   web (>= 0)

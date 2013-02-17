@@ -42,10 +42,6 @@ cookbook 'logwatch',
   :git => 'https://github.com/jeremiahsnapp/logwatch'
 #  :path => '../cookbooks/logwatch'
 
-cookbook 'users',
-  :git => 'https://github.com/jeremiahsnapp/users'
-#  :path => '../cookbooks/users'
-
 # Community Cookbooks
 
   # chef-solo-search provides data bag search for Chef Solo
