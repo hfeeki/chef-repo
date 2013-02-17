@@ -78,6 +78,9 @@ cookbook 'nodejs',
 cookbook 'npm',
   :git => 'http://github.com/balbeko/chef-npm'
 
+cookbook 'gitlab'
+  :git => 'https://github.com/atomic-penguin/cookbook-gitlab'
+
 #[submodule "cookbooks/apache2"]
 #	path = cookbooks/apache2
 #	url = https://github.com/opscode-cookbooks/apache2.git
